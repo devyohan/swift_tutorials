@@ -1,6 +1,9 @@
 ## Some tutorial materials
 *.pdf
 
+## macOS some files
+.DS_Store
+
 ## Build generated
 build/
 DerivedData
