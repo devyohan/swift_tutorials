@@ -45,6 +45,21 @@
             </objects>
             <point key="canvasLocation" x="53" y="375"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="luv-j4-RbI">
+            <objects>
+                <viewController id="H2s-04-S0M" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2hd-2l-NLX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="mV8-jq-BQ8"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="N0A-jR-DfE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="842" y="371"/>
+        </scene>
     </scenes>
     <resources>
         <image name="diamond" width="1030" height="754"/>
