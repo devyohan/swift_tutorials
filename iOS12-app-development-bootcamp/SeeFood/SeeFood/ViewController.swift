@@ -12,10 +12,6 @@ import Vision
 
 class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
-    @IBAction func cameraTapped(_ sender: UIBarButtonItem) {
-        present(imagePicker, animated: true, completion: nil)
-    }
-    
     @IBOutlet weak var cameraView: UIImageView!
     
     let imagePicker = UIImagePickerController()
@@ -24,10 +20,20 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         super.viewDidLoad()
         
         imagePicker.delegate = self
-        imagePicker.sourceType = .camera
+        imagePicker.sourceType = .photoLibrary
         imagePicker.allowsEditing = false
     }
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        let userPickedImage = info[UIImagePickerController.InfoKey.originalImage] as? UIImage
+        cameraView.image = userPickedImage
+        
+        imagePicker.dismiss(animated: true, completion: nil)
 
+    }
 
+    @IBAction func cameraTapped(_ sender: UIBarButtonItem) {
+        present(imagePicker, animated: true, completion: nil)
+    }
 }
 

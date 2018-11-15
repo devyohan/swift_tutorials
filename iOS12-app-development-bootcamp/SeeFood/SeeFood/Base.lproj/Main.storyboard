@@ -39,7 +39,6 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="cameraTapped" destination="9ix-Xq-pPa" id="kWr-Zc-nZf"/>
                         <outlet property="cameraView" destination="XG3-eH-t3W" id="SSQ-0J-EAl"/>
                     </connections>
                 </viewController>
