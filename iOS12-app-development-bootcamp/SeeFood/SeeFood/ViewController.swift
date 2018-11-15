@@ -20,16 +20,55 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         super.viewDidLoad()
         
         imagePicker.delegate = self
-        imagePicker.sourceType = .photoLibrary
+        imagePicker.sourceType = .camera
         imagePicker.allowsEditing = false
     }
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
-        let userPickedImage = info[UIImagePickerController.InfoKey.originalImage] as? UIImage
-        cameraView.image = userPickedImage
+        if let userPickedImage = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
+            cameraView.image = userPickedImage
+            
+            guard let ciimage = CIImage(image: userPickedImage) else {
+                fatalError("Could not convert UIImage into CIImage")
+            }
+            
+            detect(image: ciimage)
+        }
+        
         
         imagePicker.dismiss(animated: true, completion: nil)
-
+        
+    }
+    
+    func detect(image: CIImage) {
+        guard let model = try? VNCoreMLModel(for: Inceptionv3().model) else {
+            fatalError("ERROR Loading model")
+        }
+        
+        let request = VNCoreMLRequest(model: model) { (request, error) in
+            guard let results = request.results as? [VNClassificationObservation] else {
+                fatalError("Model failed to process image.")
+            }
+            
+            if let firstResult = results.first {
+                if firstResult.identifier.contains("hotdog") {
+                    self.navigationItem.title = "Hotdog!"
+                    print("HOTDOG!!")
+                } else {
+                    self.navigationItem.title = "Not Hotdog!!"
+                    print("NOT HOTDOG!!!")
+                }
+            }
+        }
+        
+        let handler = VNImageRequestHandler(ciImage: image)
+        
+        do {
+            try handler.perform([request])
+        }
+        catch {
+            print(error)
+        }
     }
 
     @IBAction func cameraTapped(_ sender: UIBarButtonItem) {
