@@ -11,8 +11,8 @@
 		E813DA0421B10FFB00966D92 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = E813DA0321B10FFB00966D92 /* art.scnassets */; };
 		E813DA0621B10FFB00966D92 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E813DA0521B10FFB00966D92 /* ViewController.swift */; };
 		E813DA0921B10FFB00966D92 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E813DA0721B10FFB00966D92 /* Main.storyboard */; };
-		E813DA0B21B10FFC00966D92 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E813DA0A21B10FFC00966D92 /* Assets.xcassets */; };
 		E813DA0E21B10FFC00966D92 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E813DA0C21B10FFC00966D92 /* LaunchScreen.storyboard */; };
+		E813DA1621B12C9900966D92 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E813DA1521B12C9900966D92 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,9 +21,9 @@
 		E813DA0321B10FFB00966D92 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
 		E813DA0521B10FFB00966D92 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E813DA0821B10FFB00966D92 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		E813DA0A21B10FFC00966D92 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E813DA0D21B10FFC00966D92 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E813DA0F21B10FFC00966D92 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E813DA1521B12C9900966D92 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,8 +59,8 @@
 				E813DA0121B10FFB00966D92 /* AppDelegate.swift */,
 				E813DA0321B10FFB00966D92 /* art.scnassets */,
 				E813DA0521B10FFB00966D92 /* ViewController.swift */,
+				E813DA1521B12C9900966D92 /* Assets.xcassets */,
 				E813DA0721B10FFB00966D92 /* Main.storyboard */,
-				E813DA0A21B10FFC00966D92 /* Assets.xcassets */,
 				E813DA0C21B10FFC00966D92 /* LaunchScreen.storyboard */,
 				E813DA0F21B10FFC00966D92 /* Info.plist */,
 			);
@@ -127,7 +127,7 @@
 			files = (
 				E813DA0421B10FFB00966D92 /* art.scnassets in Resources */,
 				E813DA0E21B10FFC00966D92 /* LaunchScreen.storyboard in Resources */,
-				E813DA0B21B10FFC00966D92 /* Assets.xcassets in Resources */,
+				E813DA1621B12C9900966D92 /* Assets.xcassets in Resources */,
 				E813DA0921B10FFB00966D92 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
