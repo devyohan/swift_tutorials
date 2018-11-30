@@ -15,6 +15,7 @@
 		E877461321ABBEF1003F64D6 /* TweetSentimentClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = E877461221ABBEF1003F64D6 /* TweetSentimentClassifier.mlmodel */; };
 		E877462621ABC0F2003F64D6 /* SwifteriOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E877461F21ABC0B4003F64D6 /* SwifteriOS.framework */; };
 		E877462721ABC0F2003F64D6 /* SwifteriOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E877461F21ABC0B4003F64D6 /* SwifteriOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E877462C21ABC419003F64D6 /* properties.plist in Resources */ = {isa = PBXBuildFile; fileRef = E877462B21ABC419003F64D6 /* properties.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,6 +87,7 @@
 		AD9EC65B20FE2EF7002AE9BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E877461221ABBEF1003F64D6 /* TweetSentimentClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = TweetSentimentClassifier.mlmodel; path = ../../assets/TweetSentimentClassifier.mlmodel; sourceTree = "<group>"; };
 		E877461421ABC0B4003F64D6 /* Swifter.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Swifter.xcodeproj; path = "../assets/Swifter-master/Swifter.xcodeproj"; sourceTree = "<group>"; };
+		E877462B21ABC419003F64D6 /* properties.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = properties.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +129,7 @@
 				AD9EC65620FE2EF7002AE9BF /* Assets.xcassets */,
 				AD9EC65820FE2EF7002AE9BF /* LaunchScreen.storyboard */,
 				AD9EC65B20FE2EF7002AE9BF /* Info.plist */,
+				E877462B21ABC419003F64D6 /* properties.plist */,
 			);
 			path = Twittermenti;
 			sourceTree = "<group>";
@@ -250,6 +253,7 @@
 				AD9EC65A20FE2EF7002AE9BF /* LaunchScreen.storyboard in Resources */,
 				AD9EC65720FE2EF7002AE9BF /* Assets.xcassets in Resources */,
 				AD9EC65520FE2EF4002AE9BF /* Main.storyboard in Resources */,
+				E877462C21ABC419003F64D6 /* properties.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
